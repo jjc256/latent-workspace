@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data and models
+data/episodic_db/
+data/synthetic/
+data/checkpoints/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+mlx_models/
+mlx_model/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Env vars
+.env
+.env.*

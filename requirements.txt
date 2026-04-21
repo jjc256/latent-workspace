@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+mlx
+mlx-lm
+open-clip-torch
+chromadb
+transformers
+accelerate
+gymnasium
