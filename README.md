@@ -15,8 +15,8 @@ Runs entirely on Apple Silicon (MPS backend, 24 GB target). No cloud compute.
 ```
                     ┌─────────────────────────────────┐
   text/image ──────▶│  Perception Layer               │
-                    │  TextEncoder · VisionEncoder     │
-                    │  SemanticGate                    │
+                    │  TextEncoder · VisionEncoder    │
+                    │  SemanticGate                   │
                     └───────────────┬─────────────────┘
                                     │ object tokens [N, 256]
                                     ▼
@@ -40,7 +40,7 @@ Runs entirely on Apple Silicon (MPS backend, 24 GB target). No cloud compute.
                                     │
                     ┌───────────────▼─────────────────┐
                     │  Language Output (Phase 5)      │
-                    │  Qwen2.5-3B via MLX              │
+                    │  Qwen2.5-3B via MLX             │
                     └─────────────────────────────────┘
 ```
 
