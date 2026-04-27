@@ -23,8 +23,8 @@ from workspace.slot_attention import SlotAttention
 
 
 def test_text_projection_shape():
-    proj = TextProjection(3584, 256)
-    x = torch.randn(5, 3584)
+    proj = TextProjection(2048, 256)
+    x = torch.randn(5, 2048)
     out = proj(x)
     assert out.shape == (5, 256)
 

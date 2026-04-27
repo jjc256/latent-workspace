@@ -17,6 +17,7 @@ env/
 data/episodic_db/
 data/synthetic/
 data/checkpoints/
+data/gate_data/images/
 *.gguf
 *.safetensors
 *.bin

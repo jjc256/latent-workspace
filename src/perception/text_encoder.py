@@ -10,11 +10,11 @@ from torch import Tensor
 
 
 class ModelNotAvailableError(RuntimeError):
-    """Raised when Qwen2.5-7B weights cannot be loaded."""
+    """Raised when Qwen2.5-3B weights cannot be loaded."""
 
 
 class TextProjection(nn.Module):
-    def __init__(self, in_dim: int = 3584, out_dim: int = 256) -> None:
+    def __init__(self, in_dim: int = 2048, out_dim: int = 256) -> None:
         super().__init__()
         self.linear = nn.Linear(in_dim, out_dim)
 
@@ -36,8 +36,8 @@ Output format: {{"entities": ["entity1", "entity2"], "intent": "one sentence"}}
 
 
 class TextEncoder:
-    MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"
-    HIDDEN_DIM = 3584
+    MODEL_ID = "Qwen/Qwen2.5-3B-Instruct"
+    HIDDEN_DIM = 2048
 
     def __init__(
         self,
